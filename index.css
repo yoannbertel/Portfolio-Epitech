@@ -2,7 +2,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	background: linear-gradient(45deg, #080808, #000f0f);
+	background: linear-gradient(45deg, #080808, #000808);
 }
 
 
@@ -114,10 +114,10 @@ header {
 		margin: 50px;
 	}
 	#main-text :first-child {
-		font-size: 7vh;
+		font-size: 9vw;
 	}
 	#main-text :nth-child(n + 2) {
-		font-size: 4vh;
+		font-size: 4vw;
 	}
 }
 
@@ -259,8 +259,15 @@ header {
 
 #contact-form > div > input {
 	border: none;
-	width: 300px;
-	height: 30px;
+
+	@media (min-width: 1000px) {
+		width: 300px;
+		height: 30px;
+	}
+	@media (max-width: 999px) {
+		width: 150px;
+		height: 30px;
+	}
 	margin-bottom: 10px;
 	font-size: 20px;
 
