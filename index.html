@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Yoann Bertel</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<header>
+		<div id="header-buttons">
+			<button id="projects-button">Projects</button>
+			<button id="competences-button">Compétences</button>
+			<button id="contact-button">Contact</button>
+		</div>
+	</header>
+	<main>
+		<div id="landing">
+			<img src="picture.png" id="main-photo">
+			<div id="main-text">
+				<span>Développeur backend & Pentesteur</span><br>
+				<span>Étudiant en première année à Epitech</span><br>
+				<button onclick="window.open('https://github.com/yoannbertel', '_blank')"><img src="github_logo.png"></button>
+				<button onclick="window.open('https://www.linkedin.com/in/yoann-bertel-90b7243ba/', '_blank')"><img src="linkedin_logo.png"></button>
+				<button onclick="window.open('CV.pdf', '_blank')"><img src="pdf_logo.png"></button>
+			</div>
+		</div>
+		<div id="projects">
+			<div class="project">
+				<div class="title"><a href="https://github.com/yoannbertel/Hack-Juice-Epitech">E-Todo</a></div>
+				<div class="description">
+					<img src="etodo.png"><br>
+					Premier projet web de l'année.<br>
+					Objectif: faire une simple application web E-Todo fullstack avec Express et React.<br>
+					<br>
+					Je me suis chargé de faire le backend, de la  base de données et du docker, et mon collègue c'est chargé du frontend.
+				</div>
+			</div>
+			<div class="project">
+				<div class="title"><a href="https://github.com/yoannbertel/Hack-Juice-Epitech">Hack Juice</a></div>
+				<div class="description">
+					<img src="hack_juice.png"><br>
+					Objectif: On devait chercher et documenter des failles dans un site prévu pour le projet (Owasp juice shop). Dans la documentation on devait détaillé comment fonctionne la faille, sa séverité et comment prévenir le problème. Le projet avec une quota minimum de 10 failles avec une difficulté de 3 ou plus.<br>
+					<br>
+					Notre groupe a trouvé 23 failles avec une difficulté de 3 ou plus, dont 21 ont été trouvé (et documenté) par moi (à cause expliquer par l'absence mon collègue pour des raisons valables).<br>
+				</div>
+			</div>
+			<div class="project">
+				<div class="title"><a href="https://github.com/yoannbertel/Eliza-Epitech">Eliza</a></div>
+				<div class="description">
+					<img src="eliza.png"><br>
+					Objectif: Faire un chat bot qui pourrait être utilisé par une entreprise<br>
+					<br>
+					Notre groupe avont décidé de faire un chat bot pour répondre aux questions de client de plusieurs entreprise grâce à une base de données contenant toutes les informations nécessaire pour répondre aux questions, et en cas d'échec, rédirige vers un opérateur humain.<br>
+					Je me suis chargé de faire le backend, base de donné et une partie de frontend (majoritairement les panels admin/entreprise)
+				</div>
+			</div>
+			<div class="project">
+				<div class="title"><a href="https://github.com/yoannbertel/Job-Aggregator-Epitech">Job Aggregator</a></div>
+				<div class="description">
+					<img src="job_aggregator.png"><br>
+					Le projet final de l'année<br>
+					Objectif: Notre groupe devait faire un site fullstack dans le but de aider les utilisateurs à trouver du travail, nous devions utilisé l'API WeLoveDev fournit pour la durée du projet.<br>
+					<br>
+					Je me suis chargé de faire le backend, base de données (et chargé les données de l'API dans la base de données) et le docker
+				</div>
+			</div>
+		</div>
+		<div id="center-competences">
+			<div id="competences">
+				<div class="title">Competences</div><br>
+				<div class="content">
+					Mes compétences sont principalement orienté autour du backend, base de données et cybersécurité, en particulier le backend.<br>
+					<br>
+					Le backend est ce que j'aime le plus. Je l'ai appris en autodidacte pour mon stage de 3ème puis pour des projets personnels (backend pour des bots, application webs, etc...) et mes compétences ont été appronfondit à Epitech avec leurs projets, qui m'ont obligé de sortir de ma zone de comfort.<br>
+					Le projet de cybersécurité m'a aussi appris beaucoup sur la cybersécurité, même si j'avais vu quelques bases avant. C'est mon second meilleurs secteur après le backend.<br>
+					J'ai aussi des compétences plus basiques dans d'autre secteurs, comme le frontend ou la data.
+				</div>
+			</div>
+		</div>
+		<div id="center-contact">
+			<div id="contact">
+				<div class="title">Contact</div>
+				<div id="contact-form">
+					<div>
+						<input id="input-name" placeholder="Name"><br>
+						<input id="input-email" placeholder="Email/phone"><br>
+						<input id="input-reason" placeholder="Reason"><br>
+						<button id="contact-send">Send</button><span id="sent-message"></span>
+					</div>
+					<textarea id="input-message" placeholder="Message"></textarea><br>
+					
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		© Yoann Bertel | All Rights Reserved
+	</footer>
+
+	<script src="index.js"></script>
+</body>
+</html>
